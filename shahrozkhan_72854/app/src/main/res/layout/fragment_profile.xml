@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.profile.ProfileFragment">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_img"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/profile"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="15dp"/>
+
+    <EditText
+        android:id="@+id/profile_name"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profile_img"
+        style="@style/editText"
+        android:hint="Name"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/profile_email"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profile_name"
+        style="@style/editText"
+        android:hint="Email Address"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"/>
+
+    <EditText
+        android:id="@+id/profile_number"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profile_email"
+        style="@style/editText"
+        android:hint="Phone Number"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"/>
+
+    <EditText
+        android:id="@+id/profile_address"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profile_number"
+        style="@style/editText"
+        android:hint="Address"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:id="@+id/updateBtn"
+        style="@style/blueButtonStyle"
+        app:layout_constraintTop_toBottomOf="@+id/profile_address"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="15dp"
+        android:text="Update"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

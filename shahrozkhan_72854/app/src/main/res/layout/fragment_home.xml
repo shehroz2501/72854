@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B17270"
+    tools:context=".ui.home.HomeFragment">
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_centerInParent="true"/>
+    
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/searchBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/search_gb"
+                android:drawableLeft="@drawable/ic_baseline_search_24"
+                android:drawablePadding="5dp"
+                android:padding="13dp"
+                android:hint="Search..."
+                android:textColor="@color/g_black"
+                android:textColorHint="@color/black"
+                android:elevation="3dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/sf_pro_display"
+                    android:text="Popular Products"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/g_black"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/popular_view_all"
+                    android:fontFamily="@font/kanit"
+                    android:layout_weight="1"
+                    android:text="View All"
+                    android:gravity="end"
+                    android:layout_marginRight="7dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/g_dark_blue" />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:id="@+id/pop_recycleView"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/sf_pro_display"
+                    android:text="Categories"
+                    android:textSize="18sp"
+                    android:textColor="@color/g_black"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/categories_view_all"
+                    android:fontFamily="@font/kanit"
+                    android:layout_weight="1"
+                    android:text="View All"
+                    android:gravity="end"
+                    android:layout_marginRight="7dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/g_dark_blue" />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:id="@+id/cat_recycleView"/>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

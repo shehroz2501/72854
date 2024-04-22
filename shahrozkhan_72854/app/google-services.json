@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "634844014825",
+    "project_id": "shahrozkhan-72854",
+    "storage_bucket": "shahrozkhan-72854.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:634844014825:android:38a8672570dc9b7969e878",
+        "android_client_info": {
+          "package_name": "com.example.shahrozkhan_72854"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsOY2vHtDK7zD1_Cbizx5FwIB6MNkNFts"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
